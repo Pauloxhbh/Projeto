@@ -286,4 +286,47 @@ footer {
 
 footer:hover {
     opacity: 0.6;
+
+}
+
+/* ==================== Responsividade ==================== */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        margin: 0;
+    }
+
+    .question-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    #question-text {
+        font-size: 1.2em;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr; /* opções em uma coluna */
+    }
+
+    .menu-button {
+        width: 60px;
+        height: 45px;
+        font-size: 1.2em;
+    }
+
+    .timer-container {
+        font-size: 1.5em;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
 }
