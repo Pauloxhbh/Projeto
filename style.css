@@ -291,9 +291,14 @@ footer:hover {
 
 /* ==================== Responsividade ==================== */
 @media (max-width: 1024px) {
-    body {
+    html, body {
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
         background: linear-gradient(135deg, #f5f5f5 10%, #19882c 100%);
-        flex-direction: column;
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     .logo {
