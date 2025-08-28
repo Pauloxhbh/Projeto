@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gincana</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="img/IFAL_RioLargo_vertical.png" class="logo">
+
+</head>
+
+<body>
+
+    <div id="start-screen" class="full-screen-overlay">
+        <img src="img/IFAL_Rio_Largo_horizontal.png" alt="" class="start-screen-logo">
+        <h1>Bem-vindo à Gincana!</h1>
+        <button id="start-button">Começar Gincana</button>
+    </div>
+
+    <div id="game-interface" class="hidden">
+        <button id="reset-button">Reiniciar Jogo</button>
+        <div class="main-container">
+            <div class="left-panel">
+                <div class="timer-container">
+                    <span id="timer">00:30</span>
+                </div>
+                <div class="question-container">
+                    <h2 id="question-text"></h2>
+                    <pre id="code-block"></pre>
+                    <div id="options-container" class="options-grid">
+                        <div class="option-box" data-option="a"></div>
+                        <div class="option-box" data-option="b"></div>
+                        <div class="option-box" data-option="c"></div>
+                        <div class="option-box" data-option="d"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="table-container">
+                    <table>
+                        <tr class="header-row">
+                            <th></th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                        </tr>
+                        <tr>
+                            <th>V</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>M</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>-2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>R</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-bar">
+                    <div class="menu-button" id="minus2-btn">-2</div>
+                    <div class="menu-button play-pause-btn" id="play-pause-btn">❚❚</div>
+                    <div class="menu-button" id="next-btn">&#9658;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Desenvolvido pelos monitores [Lara Bandeira & Carlos Silva]</p>
+    </footer>
+</body>
+
+</html>
